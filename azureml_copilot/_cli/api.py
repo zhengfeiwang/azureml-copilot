@@ -10,9 +10,11 @@ def list_workspace_api():
 def get_workspace_api():
     args = sys.argv[1:]
     workspace_name = args[0]
+    workspace_config = get_workspace(workspace_name)
     if len(args) == 2:
         string_format = args[1]
+        print(getattr(workspace_config, string_format))
     else:
-        string_format = "json"
-    workspace_config = get_workspace(workspace_name)
-    print(getattr(workspace_config, string_format))
+        print(workspace_config.url)
+        print(workspace_config.json)
+        print(workspace_config.environ)
