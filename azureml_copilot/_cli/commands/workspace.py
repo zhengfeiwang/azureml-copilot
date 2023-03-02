@@ -8,6 +8,7 @@ def list_workspaces():
         print("  subscription_id:", workspace_config.subscription_id)
         print("  resource_group:", workspace_config.resource_group_name)
         print("  workspace:", workspace_config.workspace_name)
+        print("  region:", workspace_config.region)
 
 
 def get_workspace(workspace_name: str):
