@@ -8,7 +8,8 @@ setup(
     python_requires="<4.0,>=3.8",
     entry_points={
         "console_scripts": [
-            "azureml-copilot=azureml_copilot._cli.azureml_copilot_commands:main"
+            "azureml-copilot=azureml_copilot._cli.azureml_copilot_commands:main",
+            "acl=azureml_copilot._cli.commands:list_workspaces",
         ]
     },
 )
