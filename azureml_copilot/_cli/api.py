@@ -1,6 +1,6 @@
 import sys
 
-from .workspace import list_workspace, get_workspace_environ, get_workspace_json
+from .workspace import list_workspace, get_workspace
 
 
 def list_workspace_api():
@@ -14,7 +14,5 @@ def get_workspace_api():
         string_format = args[1]
     else:
         string_format = "json"
-    if string_format == "json":
-        get_workspace_json(workspace_name)
-    else:
-        get_workspace_environ(workspace_name)
+    workspace_config = get_workspace(workspace_name)
+    print(getattr(workspace_config, string_format))

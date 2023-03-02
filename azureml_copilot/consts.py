@@ -13,7 +13,9 @@ class Macros:
     def resolve_dpv2_sample_workspace_macro() -> str:
         # Reference from azureml-examples:
         # https://github.com/Azure/azureml-examples/blob/main/infra/init_environment.sh#L46-L53
-        return (datetime.datetime.today() + datetime.timedelta(days=2)).strftime("%Y%m")[2:]
+        return (datetime.datetime.today() + datetime.timedelta(days=2)).strftime(
+            "%Y%m"
+        )[2:]
 
     @staticmethod
     def resolve_pipelines_sample_workspace_macro() -> str:
