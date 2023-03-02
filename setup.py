@@ -9,7 +9,7 @@ setup(
     entry_points={
         "console_scripts": [
             "azureml-copilot=azureml_copilot._cli.commands:main",
-            "acw=azureml_copilot._cli.commands:_workspace_parser"
+            "acw=azureml_copilot._cli.commands:_workspace_parser",
         ]
     },
 )
