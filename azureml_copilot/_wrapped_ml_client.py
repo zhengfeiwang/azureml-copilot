@@ -1,6 +1,6 @@
 from azure.ai.ml import MLClient
 
-from azureml_copilot.consts import WORKSPACES
+from azureml_copilot.workspace import WORKSPACES
 from azureml_copilot._ml_client import init_ml_client
 
 
