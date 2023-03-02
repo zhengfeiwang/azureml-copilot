@@ -8,6 +8,7 @@ def list_workspace():
         print("  resource_group:", workspace_config.resource_group_name)
         print("  workspace:", workspace_config.workspace_name)
         print("  region:", workspace_config.region)
+        print("  url:", workspace_config.url)
 
 
 def get_workspace(workspace_name: str) -> WorkspaceConfig:
