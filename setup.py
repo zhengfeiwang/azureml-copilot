@@ -8,8 +8,8 @@ setup(
     python_requires="<4.0,>=3.8",
     entry_points={
         "console_scripts": [
-            "acl=azureml_copilot._cli.api:list_workspace_api",
-            "acg=azureml_copilot._cli.api:get_workspace_api",
+            "azureml-copilot=azureml_copilot._cli.commands:main",
+            "acw=azureml_copilot._cli.commands:_workspace_parser"
         ]
     },
 )
