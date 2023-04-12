@@ -1,1 +1,0 @@
-- black SDK: `New-Alias blacksdk .\black_sdk.ps1`
