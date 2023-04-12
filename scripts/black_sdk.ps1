@@ -9,4 +9,6 @@ Set-Location ~/source/repos/azure-sdk-for-python/sdk/ml/azure-ai-ml
 Write-Host "execute black command..."
 black --config ../../../eng/black-pyproject.toml .
 
-Set-Location $cwd  # cd back
+# recover context
+Set-Location $cwd
+conda deactivate
